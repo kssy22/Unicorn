@@ -1,24 +1,25 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url('background.png'); 
+    background-size: 10%;
+}
+
 .banner {
     background-color: #C55394;
-    height: 70px;
     width: 100%;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .banner-title {
-    position: relative;
-    top: 10px; 
-    left: 10px;
-    margin: 0;
     color: #fff;
+    margin: 1%;
     font-family: 'Courgette', cursive;
 }
 
 .banner-sections {
-    position: absolute;
-    top: 0;
-    right: 5px;
-    bottom: 0;
     display: flex;
     flex-direction: row;
 }
@@ -36,24 +37,20 @@
     background-color: #EB43A3;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('background.png'); 
-    background-size: 10%;
-}
-
-.content {
+.content-title {
     color: #C55394;
     font-family: 'Courgette', cursive;
-    padding: 20;
-    margin: 20px auto;
-    max-width: 800px;
     text-align: center;
 }
 
-.rainbow-image{
-    width: 50%;
+.rainbow-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.rainbow-image {
+    height: 10%;
+    width: 20%;
 }
 
 .content-box {
@@ -64,19 +61,14 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.content-title {
+.content-section {
     color: #EB43A3;
     font-family: 'Courgette', cursive;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
     text-align: left;
 }
 
 .content p {
-    text-align: left;
-    text-indent: 0;
-    margin-left: 20px;
+    margin-left: 2%;
     font-family: Arial, sans-serif;
     color: #333;
     
@@ -84,13 +76,11 @@ body {
 
 .image-grid {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .image-container {
-    position: relative;
-    margin: 10px;
-    width: 200px;
+    margin : 1%;
 }
 
 .image-container img,
@@ -100,10 +90,7 @@ body {
 }
 
 .image-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    width: 95%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
@@ -113,24 +100,14 @@ body {
 
 .map-section {
     display: flex;
-    align-items: flex-start;
 }
 
 .map {
-    height: 50%;
-}
-
-.address {
-    padding-left: 10px;
+    width: 100%;
 }
 
 .newsletter-form {
     display: flex;
-}
-
-.newsletter-form input[type="email"],
-.newsletter-form button {
-    margin-bottom: 10px;
 }
 
 .submit-button {
@@ -146,7 +123,8 @@ body {
 }
 
 .footer {
+    bottom: 0;
     background-color: #E577B5;
-    height: 100px;
+    height: 10%;
     width: 100%;
 }
